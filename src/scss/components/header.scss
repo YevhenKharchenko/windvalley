@@ -1,6 +1,6 @@
 .header {
-  background: #fff;
-  border-bottom: 3px solid #ba2028;
+  backdrop-filter: blur(15px);
+  background: rgba(255, 255, 255, 0.3);
   padding: 6px 0;
   position: fixed;
   width: 100%;
@@ -42,18 +42,20 @@
   @include media(desktop) {
     display: flex;
     align-items: center;
-    gap: 16px;
+    gap: 24px;
   }
 }
 
 .nav-list-link {
-  padding: 8px 12px;
-  font-family: 'Poppins', sans-serif;
-  font-weight: 600;
+  border: 1px solid transparent;
+  border-radius: 50px;
+  padding: 7px 11px;
+  font-family: 'Lato', sans-serif;
+  font-weight: 700;
   font-size: 16px;
   line-height: 1.5;
   text-align: center;
-  color: #2a2a2a;
+  color: #47505c;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -65,7 +67,8 @@
   &:focus,
   &:active,
   &.active {
-    color: #ba2028;
+    border-color: #f08080;
+    color: #f08080;
   }
 }
 

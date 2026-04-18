@@ -1,5 +1,5 @@
 .footer {
-  background: #17283a;
+  background: #1a2b3c;
   padding-top: 60px;
   padding-bottom: 60px;
 
@@ -35,11 +35,11 @@
 }
 
 .footer-link {
-  font-family: 'Poppins', sans-serif;
-  font-weight: 500;
+  font-family: 'Lato', sans-serif;
+  font-weight: 600;
   font-size: 18px;
   line-height: 1.5;
-  letter-spacing: -0.02em;
+  letter-spacing: 0.02em;
   text-align: center;
   color: #fff;
   transition: color 0.3s ease-in-out;
@@ -54,10 +54,11 @@
 }
 
 .footer-text {
-  font-family: 'Poppins', sans-serif;
+  font-family: 'Lato', sans-serif;
   font-weight: 400;
   font-size: 16px;
   line-height: 1.5;
+  letter-spacing: 0.02em;
   text-align: center;
   color: #fff;
 
