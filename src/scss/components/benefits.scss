@@ -1,0 +1,69 @@
+.benefits-section {
+  background: #17283a;
+
+  @include media(desktop) {
+  }
+}
+
+.benefits-bg-wrapper {
+  padding-top: 64px;
+  padding-bottom: 64px;
+  max-width: 375px;
+  margin-left: auto;
+  margin-right: auto;
+
+  @include media(desktop) {
+    padding-top: 104px;
+    padding-bottom: 104px;
+    max-width: 1440px;
+  }
+}
+
+.benefits-container {
+  @include media(desktop) {
+  }
+}
+
+.benefits-content-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 32px;
+
+  @include media(desktop) {
+    flex-direction: row;
+  }
+}
+
+.benefits-text-wrapper {
+  @include media(desktop) {
+    width: 100%;
+    max-width: 640px;
+  }
+}
+
+.benefits-title {
+  text-align: left;
+  color: #fff;
+
+  @include media(desktop) {
+  }
+}
+
+.benefits-subtitle {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 1.4;
+  color: #fff;
+
+  @include media(desktop) {
+    font-size: 24px;
+  }
+}
+
+.benefits-img {
+  @include media(desktop) {
+    min-width: 640px;
+  }
+}

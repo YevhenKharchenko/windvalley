@@ -1,0 +1,182 @@
+.gameplay-section {
+  @include media(desktop) {
+  }
+}
+
+.gameplay-bg-wrapper {
+  padding-top: 64px;
+  padding-bottom: 64px;
+  max-width: 375px;
+  margin-left: auto;
+  margin-right: auto;
+
+  @include media(desktop) {
+    padding-top: 104px;
+    padding-bottom: 104px;
+    max-width: 1440px;
+  }
+}
+
+.gameplay-container {
+  @include media(desktop) {
+  }
+}
+
+.gameplay-top-content-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 24px;
+  margin-bottom: 64px;
+
+  @include media(desktop) {
+    flex-direction: row-reverse;
+    gap: 64px;
+  }
+}
+
+.gameplay-top-text-wrapper {
+  @include media(desktop) {
+    width: 100%;
+    max-width: 608px;
+  }
+}
+
+.gameplay-title {
+  text-align: left;
+  margin-bottom: 24px;
+
+  @include media(desktop) {
+  }
+}
+
+.gameplay-list {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+
+  @include media(desktop) {
+  }
+}
+
+.gameplay-list-item {
+  display: flex;
+  align-items: start;
+  gap: 16px;
+
+  @include media(desktop) {
+  }
+}
+
+.gameplay-icon {
+  min-width: 32px;
+
+  @include media(desktop) {
+  }
+}
+
+.gameplay-item-text-wrapper {
+  @include media(desktop) {
+  }
+}
+
+.gameplay-item-title {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 1.5;
+  letter-spacing: -0.02em;
+  color: #2a2a2a;
+  margin-bottom: 8px;
+
+  @include media(desktop) {
+    font-size: 20px;
+  }
+}
+
+.gameplay-item-text {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #555;
+
+  @include media(desktop) {
+    font-size: 18px;
+  }
+}
+
+.gameplay-img1 {
+  @include media(desktop) {
+    min-width: 640px;
+  }
+}
+
+.gameplay-bottom-content-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 24px;
+
+  @include media(desktop) {
+    flex-direction: row;
+    gap: 64px;
+  }
+}
+
+.gameplay-bottom-text-wrapper {
+  @include media(desktop) {
+    width: 100%;
+    max-width: 608px;
+  }
+}
+
+.gameplay-subtitle {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 500;
+  font-size: 22px;
+  line-height: 1.4;
+  letter-spacing: -0.02em;
+  color: #2a2a2a;
+  margin-bottom: 24px;
+
+  @include media(desktop) {
+    font-size: 26px;
+  }
+}
+
+.gameplay-bottom-list {
+  list-style-type: disc;
+  padding-left: 25px;
+  color: #555;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+
+  @include media(desktop) {
+  }
+}
+
+.gameplay-bottom-list-item {
+  @include media(desktop) {
+  }
+}
+
+.gameplay-item-text {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 1.5;
+  letter-spacing: -0.02em;
+  color: #555;
+
+  @include media(desktop) {
+    font-size: 20px;
+  }
+}
+
+.gameplay-img2 {
+  @include media(desktop) {
+    min-width: 640px;
+  }
+}

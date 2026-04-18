@@ -1,0 +1,93 @@
+.contact-section {
+  @include media(desktop) {
+  }
+}
+
+.contact-bg-wrapper {
+  padding-top: 64px;
+  padding-bottom: 80px;
+  max-width: 375px;
+  margin-left: auto;
+  margin-right: auto;
+
+  @include media(desktop) {
+    padding-top: 104px;
+    padding-bottom: 120px;
+    max-width: 1440px;
+  }
+}
+
+.contact-container {
+  @include media(desktop) {
+  }
+}
+
+.contact-content-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 24px;
+
+  @include media(desktop) {
+    flex-direction: row-reverse;
+    gap: 64px;
+  }
+}
+
+.contact-text-wrapper {
+  background: #17283a;
+  border-radius: 24px;
+  padding: 60px 33px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  @include media(desktop) {
+    padding: 60px;
+    max-width: 528px;
+  }
+}
+
+.contact-title {
+  color: #fff;
+  margin-bottom: 40px;
+
+  @include media(desktop) {
+  }
+}
+
+.contact-link {
+  background: #f2e6ea;
+  border-radius: 12px;
+  padding: 12px 24px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 7px;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 1.5;
+  letter-spacing: -0.02em;
+  color: #2a2a2a;
+  word-break: break-all;
+  max-width: max-content;
+
+  @include media(desktop) {
+    font-size: 20px;
+  }
+}
+
+.contact-icon {
+  min-width: 24px;
+
+  @include media(desktop) {
+  }
+}
+
+.contact-img {
+  @include media(desktop) {
+    min-width: 720px;
+  }
+}

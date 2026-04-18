@@ -1,0 +1,134 @@
+.features-section {
+  @include media(desktop) {
+  }
+}
+
+.features-section-wrapper {
+  padding-top: 56px;
+  padding-bottom: 56px;
+  max-width: 375px;
+  margin-left: auto;
+  margin-right: auto;
+  overflow: hidden;
+
+  @include media(desktop) {
+    padding-top: 80px;
+    padding-bottom: 80px;
+    max-width: 1440px;
+    position: relative;
+  }
+}
+
+.features-container {
+  @include media(desktop) {
+  }
+}
+
+.features-title {
+  text-align: center;
+  margin-bottom: 40px;
+
+  @include media(desktop) {
+    margin-bottom: 64px;
+  }
+}
+
+.features-swiper-container {
+  max-width: 343px;
+  margin-left: auto;
+  margin-right: auto;
+
+  @include media(desktop) {
+    max-width: 100%;
+  }
+}
+
+.features-swiper-container.show {
+  visibility: visible;
+}
+
+.features-swiper-wrapper {
+  @include media(desktop) {
+  }
+}
+
+.features-list-item {
+  box-shadow: inset 0 4px 10px 0 #1c438f;
+  background: #1e54c0;
+  border-radius: 48px;
+  padding: 56px 24px;
+  width: 100% !important;
+  max-width: 343px;
+  min-height: 479px;
+  display: flex !important;
+  flex-direction: column;
+  align-items: center;
+  overflow: hidden;
+
+  @include media(desktop) {
+    max-width: 416px;
+    min-height: 500px;
+  }
+}
+
+.features-img {
+  margin-bottom: 24px;
+
+  @include media(desktop) {
+  }
+}
+
+.features-item-title {
+  font-family: 'Inter', sans-serif;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 1.4;
+  text-align: center;
+  color: #fff;
+  margin-bottom: 8px;
+
+  @include media(desktop) {
+    font-size: 22px;
+  }
+}
+
+.features-item-text {
+  font-family: 'Inter', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.4;
+  text-align: center;
+  color: #e8e8e8;
+
+  @include media(desktop) {
+    font-size: 18px;
+  }
+}
+
+.dots {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 28px;
+  margin-top: 32px;
+
+  @include media(desktop) {
+    display: none;
+  }
+}
+
+.features-dot {
+  border-radius: 8px;
+  min-width: 8px;
+  width: 8px;
+  height: 8px;
+  transition: transform 0.3s ease-in-out;
+  border-radius: 100%;
+  background-color: #acbad3;
+  cursor: pointer;
+}
+
+.features-dot.active {
+  background-color: #da5a2f;
+  transform: scale(2);
+}

@@ -1,0 +1,85 @@
+.gallery-section {
+  @include media(desktop) {
+  }
+}
+
+.gallery-bg-wrapper {
+  padding-top: 64px;
+  padding-bottom: 64px;
+  max-width: 375px;
+  margin-left: auto;
+  margin-right: auto;
+  overflow: hidden;
+  background-image: url(../img/gallery/gallery-bg-mob.jpg);
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-size: cover;
+
+  @include media(desktop) {
+    padding-top: 104px;
+    padding-bottom: 104px;
+    max-width: 1440px;
+    background-image: url(../img/gallery/gallery-bg-desk.jpg);
+  }
+}
+
+.gallery-container {
+  @include media(desktop) {
+  }
+}
+
+.gallery-content-wrapper {
+  @include media(desktop) {
+  }
+}
+
+.gallery-title {
+  color: #fff;
+  margin-bottom: 40px;
+
+  @include media(desktop) {
+    margin-bottom: 64px;
+  }
+}
+
+.gallery-swiper-container {
+  max-width: 343px;
+  margin-left: auto;
+  margin-right: auto;
+
+  @include media(desktop) {
+    max-width: 1440px;
+  }
+}
+
+.gallery-swiper-container.show {
+  visibility: visible;
+}
+
+.gallery-swiper-wrapper {
+  @include media(desktop) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 32px;
+  }
+}
+
+.gallery-slide {
+  width: 100%;
+  max-width: 343px;
+
+  @include media(desktop) {
+    max-width: 304px;
+    width: 100% !important;
+
+    &:nth-child(2) {
+      max-width: 640px;
+    }
+  }
+}
+
+.gallery-img {
+  @include media(desktop) {
+  }
+}
