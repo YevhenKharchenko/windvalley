@@ -1,25 +1,22 @@
 .gallery-section {
+  background: #042755;
+
   @include media(desktop) {
   }
 }
 
 .gallery-bg-wrapper {
-  padding-top: 64px;
-  padding-bottom: 64px;
+  padding-top: 40px;
+  padding-bottom: 40px;
   max-width: 375px;
   margin-left: auto;
   margin-right: auto;
   overflow: hidden;
-  background-image: url(../img/gallery/gallery-bg-mob.jpg);
-  background-repeat: no-repeat;
-  background-position: top center;
-  background-size: cover;
 
   @include media(desktop) {
-    padding-top: 104px;
-    padding-bottom: 104px;
+    padding-top: 72px;
+    padding-bottom: 72px;
     max-width: 1440px;
-    background-image: url(../img/gallery/gallery-bg-desk.jpg);
   }
 }
 
@@ -35,10 +32,27 @@
 
 .gallery-title {
   color: #fff;
-  margin-bottom: 40px;
 
   @include media(desktop) {
-    margin-bottom: 64px;
+  }
+}
+
+.gallery-subtitle {
+  font-family: 'Lato', sans-serif;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  text-align: center;
+  color: #fff;
+  margin-bottom: 32px;
+
+  @include media(desktop) {
+    font-size: 20px;
+    max-width: 640px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 48px;
   }
 }
 
@@ -61,7 +75,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 32px;
+    gap: 48px;
   }
 }
 
@@ -74,7 +88,7 @@
     width: 100% !important;
 
     &:nth-child(2) {
-      max-width: 640px;
+      max-width: 607px;
     }
   }
 }

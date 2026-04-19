@@ -1,3 +1,18 @@
+.hero-about-wrapper {
+  max-width: 375px;
+  margin-left: auto;
+  margin-right: auto;
+  background-image: url(../img/hero/hero-bg-mob.jpg);
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-size: cover;
+
+  @include media(desktop) {
+    max-width: 1440px;
+    background-image: url(../img/hero/hero-bg-desk.jpg);
+  }
+}
+
 .hero-section {
   @include media(desktop) {
   }
@@ -9,16 +24,11 @@
   max-width: 375px;
   margin-left: auto;
   margin-right: auto;
-  background-image: url(../img/hero/hero-bg-mob.jpg);
-  background-repeat: no-repeat;
-  background-position: top center;
-  background-size: cover;
 
   @include media(desktop) {
     padding-top: 316px;
     padding-bottom: 254px;
     max-width: 1440px;
-    background-image: url(../img/hero/hero-bg-desk.jpg);
   }
 }
 

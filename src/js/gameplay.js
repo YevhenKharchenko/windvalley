@@ -1,50 +1,52 @@
 import Swiper from 'swiper';
 import 'swiper/css/bundle';
 
-const featuresDots = document.querySelectorAll('.features-dot');
+const gameplayDots = document.querySelectorAll('.gameplay-dot');
 
-let featuresSwiper;
+let gameplaySwiper;
 
-featuresSwiper = new Swiper('.features-swiper-container', {
+gameplaySwiper = new Swiper('.gameplay-swiper-container', {
   direction: 'horizontal',
   loop: false,
   centeredSlides: true,
   slidesPerView: 1,
   slidesPerGroup: 1,
   initialSlide: 0,
-  spaceBetween: 12,
+  spaceBetween: 20,
   speed: 500,
   allowTouchMove: true,
   grabCursor: true,
   watchOverflow: true,
   breakpoints: {
     1440: {
+      slidesPerView: 4,
       centeredSlides: false,
-      slidesPerView: 'auto',
-      spaceBetween: 24,
+      allowTouchMove: false,
+      grabCursor: false,
+      spaceBetween: 0,
     },
   },
 
   on: {
     init(swiper) {
       document
-        .querySelector('.features-swiper-container')
+        .querySelector('.gameplay-swiper-container')
         .classList.add('show');
     },
     slideChange(swiper) {
-      updateFeaturesDots(swiper.realIndex);
+      updateGameplayDots(swiper.realIndex);
     },
   },
 });
 
-function updateFeaturesDots(index) {
-  featuresDots.forEach((dot, i) => {
+function updateGameplayDots(index) {
+  gameplayDots.forEach((dot, i) => {
     dot.classList.toggle('active', i === index);
   });
 }
 
-featuresDots.forEach((dot, index) => {
+gameplayDots.forEach((dot, index) => {
   dot.addEventListener('click', () => {
-    featuresSwiper.slideTo(index);
+    gameplaySwiper.slideTo(index);
   });
 });
