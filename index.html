@@ -1,0 +1,525 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Windvalley</title>
+    <meta name="robots" content="index, follow" />
+    <link rel="canonical" href="https://windvalley.online" />
+    <link rel="icon" type="image/png" href="/windvalley/favicon.png" />
+    
+    <script type="module" crossorigin src="/windvalley/commonHelpers3.js"></script>
+    <link rel="modulepreload" crossorigin href="/windvalley/assets/header-e0623b65.js">
+    <link rel="modulepreload" crossorigin href="/windvalley/assets/vendor-0d74985d.js">
+    <link rel="stylesheet" href="/windvalley/assets/header-aa892c5a.css">
+    <link rel="stylesheet" href="/windvalley/assets/vendor-fb046256.css">
+  </head>
+  <body>
+    <header class="header">
+  <div class="container header-container">
+    <nav class="nav">
+      <a class="header-logo-link" href="./">
+        <img
+          class="header-logo-img"
+          src="data:image/png;base64,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"
+          alt="Logo"
+          width="43"
+          height="40"
+      /></a>
+      <ul class="nav-list">
+        <li class="nav-list-item">
+          <a class="nav-list-link" href="./index.html#about">About the Game</a>
+        </li>
+        <li class="nav-list-item">
+          <a class="nav-list-link" href="./index.html#mechanics"
+            >Core Mechanics</a
+          >
+        </li>
+        <li class="nav-list-item">
+          <a class="nav-list-link" href="./index.html#features">Features</a>
+        </li>
+        <li class="nav-list-item">
+          <a class="nav-list-link" href="./index.html#gameplay">How to Play</a>
+        </li>
+        <li class="nav-list-item">
+          <a class="nav-list-link" href="./index.html#gallery">Gallery</a>
+        </li>
+        <li class="nav-list-item">
+          <a class="nav-list-link" href="./index.html#faq">FAQ</a>
+        </li>
+        <li class="nav-list-item">
+          <a class="nav-list-link" href="./index.html#contact">Contact</a>
+        </li>
+      </ul>
+      <button class="nav-btn" type="button" aria-label="Open mobile menu">
+        <svg class="menu-icon" width="40" height="40">
+          <use href="/windvalley/assets/sprite-39ca4af8.svg#icon-menu"></use>
+        </svg>
+      </button>
+      <button class="close-btn" type="button" aria-label="Close mobile menu">
+        <svg class="close-icon" width="40" height="40">
+          <use href="/windvalley/assets/sprite-39ca4af8.svg#icon-close"></use>
+        </svg>
+      </button>
+    </nav>
+  </div>
+</header>
+
+    <div class="context-menu">
+  <div class="container context-container">
+    <nav class="context-nav">
+      <ul class="context-nav-list">
+        <li class="context-list-item">
+          <a class="context-list-link" href="./index.html#about"
+            >About the Game</a
+          >
+        </li>
+        <li class="context-list-item">
+          <a class="context-list-link" href="./index.html#mechanics"
+            >Core Mechanics</a
+          >
+        </li>
+        <li class="context-list-item">
+          <a class="context-list-link" href="./index.html#features">Features</a>
+        </li>
+        <li class="context-list-item">
+          <a class="context-list-link" href="./index.html#gameplay"
+            >How to Play</a
+          >
+        </li>
+        <li class="context-list-item">
+          <a class="context-list-link" href="./index.html#gallery">Gallery</a>
+        </li>
+        <li class="context-list-item">
+          <a class="context-list-link" href="./index.html#faq">FAQ</a>
+        </li>
+        <li class="context-list-item">
+          <a class="context-list-link" href="./index.html#contact">Contact</a>
+        </li>
+      </ul>
+    </nav>
+  </div>
+</div>
+
+    <main>
+      <div class="hero-about-wrapper">
+        <section class="section hero-section" id="home">
+  <div class="hero-bg-wrapper">
+    <div class="container hero-container">
+      <div class="hero-content-wrapper">
+        <div class="hero-text-wrapper">
+          <h1 class="hero-main-title">Windvalley</h1>
+          <p class="hero-subtitle">Sky Shepherd</p>
+          <p class="hero-text">
+            Every current shapes the journey. Calm your mind, guide your
+            luminous companions, and transform the chaotic winds into a safe
+            passage toward the sanctuary.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+        <section class="section about-section" id="about">
+  <div class="about-bg-wrapper">
+    <div class="container about-container">
+      <div class="about-content-wrapper">
+        <h2 class="section-title about-title">About the Game</h2>
+        <p class="about-subtitle">
+          Windvalley: Sky Shepherd places players in the role of a guardian
+          guiding fragile sky creatures through dangerous aerial routes.
+        </p>
+        <p class="about-text about-top-text">
+          By activating wind channels and repositioning environmental elements,
+          players create safe paths across open sky landscapes.
+        </p>
+        <p class="about-text">
+          As you progress, you'll hit trickier spots - maybe some rough air
+          that'll scatter your flock, or tight squeezes between floating rocks.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+      </div>
+      <section class="section mechanics-section" id="mechanics">
+  <div class="mechanics-bg-wrapper">
+    <div class="container mechanics-container">
+      <div class="mechanics-content-wrapper">
+        <h2 class="section-title">Core Mechanics</h2>
+        <p class="mechanics-subtitle">
+          Later levels get pretty complex - you're juggling several wind
+          currents at once, trying to keep everything flowing smoothly.
+        </p>
+        <ul class="mechanics-list">
+          <li class="mechanics-list-item">
+            <svg class="mechanics-icon" width="64" height="64">
+              <use href="/windvalley/assets/sprite-39ca4af8.svg#icon-mechanics1"></use>
+            </svg>
+            <p class="mechanics-item-text">
+              Redirect wind currents to influence movement
+            </p>
+          </li>
+          <li class="mechanics-list-item">
+            <svg class="mechanics-icon" width="64" height="64">
+              <use href="/windvalley/assets/sprite-39ca4af8.svg#icon-mechanics2"></use>
+            </svg>
+            <p class="mechanics-item-text">
+              Guide flock formations safely across gaps
+            </p>
+          </li>
+          <li class="mechanics-list-item">
+            <svg class="mechanics-icon" width="64" height="64">
+              <use href="/windvalley/assets/sprite-39ca4af8.svg#icon-mechanics3"></use>
+            </svg>
+            <p class="mechanics-item-text">
+              Avoid storm pockets and unstable air zones
+            </p>
+          </li>
+          <li class="mechanics-list-item">
+            <svg class="mechanics-icon" width="64" height="64">
+              <use href="/windvalley/assets/sprite-39ca4af8.svg#icon-mechanics4"></use>
+            </svg>
+            <p class="mechanics-item-text">
+              Use floating structures as navigation anchors
+            </p>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+      <section class="section features-section" id="features">
+  <div class="features-bg-wrapper">
+    <div class="container features-container">
+      <div class="features-content-wrapper">
+        <h2 class="section-title features-title">Features</h2>
+        <ul class="features-list">
+          <li class="features-list-item">
+            <svg class="features-icon" width="24" height="24">
+              <use href="/windvalley/assets/sprite-39ca4af8.svg#icon-features"></use>
+            </svg>
+            <p class="features-item-text">
+              <span class="features-text-span"
+                >Unique Group-Guidance Gameplay:</span
+              > Master the mechanics of leading the flock as a single collective
+              unit.
+            </p>
+          </li>
+          <li class="features-list-item">
+            <svg class="features-icon" width="24" height="24">
+              <use href="/windvalley/assets/sprite-39ca4af8.svg#icon-features"></use>
+            </svg>
+            <p class="features-item-text">
+              <span class="features-text-span">Vast Open Sky Environments:</span
+              > Explore endless valleys suspended high above the clouds.
+            </p>
+          </li>
+          <li class="features-list-item">
+            <svg class="features-icon" width="24" height="24">
+              <use href="/windvalley/assets/sprite-39ca4af8.svg#icon-features"></use>
+            </svg>
+            <p class="features-item-text">
+              <span class="features-text-span"
+                >Dynamic Airflow Puzzle Systems:</span
+              > Interact with a living system of shifting wind currents.
+            </p>
+          </li>
+          <li class="features-list-item">
+            <svg class="features-icon" width="24" height="24">
+              <use href="/windvalley/assets/sprite-39ca4af8.svg#icon-features"></use>
+            </svg>
+            <p class="features-item-text">
+              <span class="features-text-span"
+                >Progressive Environmental Complexity:</span
+              >
+              New challenges that unfold step by step as you journey forward.
+            </p>
+          </li>
+          <li class="features-list-item">
+            <svg class="features-icon" width="24" height="24">
+              <use href="/windvalley/assets/sprite-39ca4af8.svg#icon-features"></use>
+            </svg>
+            <p class="features-item-text">
+              <span class="features-text-span"
+                >Calm, Contemplative Pacing:</span
+              >
+              Play at your own speed and savor every moment of the journey.
+            </p>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+      <section class="gameplay-section section" id="gameplay">
+  <div class="gameplay-section-wrapper">
+    <div class="container gameplay-container">
+      <h2 class="section-title gameplay-title">How to Play</h2>
+      <p class="gameplay-subtitle">
+        It's not about rushing through - you've got to think ahead and plan your
+        route carefully.
+      </p>
+      <div class="gameplay-swiper-container">
+        <ul class="swiper-wrapper gameplay-swiper-wrapper">
+          <li class="swiper-slide gameplay-list-item">
+            <p class="gameplay-item-number">01</p>
+            <h3 class="gameplay-item-title">Observe</h3>
+            <p class="gameplay-item-text">
+              Analyze the valley layout and shifting airflow patterns.
+            </p>
+          </li>
+          <li class="swiper-slide gameplay-list-item">
+            <p class="gameplay-item-number">02</p>
+            <h3 class="gameplay-item-title">Activate</h3>
+            <p class="gameplay-item-text">
+              Create safe routes by guiding the wind through floating
+              structures.
+            </p>
+          </li>
+          <li class="swiper-slide gameplay-list-item">
+            <p class="gameplay-item-number">03</p>
+            <h3 class="gameplay-item-title">Lead</h3>
+            <p class="gameplay-item-text">
+              Help the flock stay together and avoid turbulent storm pockets.
+            </p>
+          </li>
+          <li class="swiper-slide gameplay-list-item">
+            <p class="gameplay-item-number">04</p>
+            <h3 class="gameplay-item-title">Reach</h3>
+            <p class="gameplay-item-text">
+              Bring your luminous companions to the sanctuary to complete the
+              level.
+            </p>
+          </li>
+        </ul>
+      </div>
+      <div class="dots">
+        <div class="gameplay-dot active"></div>
+        <div class="gameplay-dot"></div>
+        <div class="gameplay-dot"></div>
+        <div class="gameplay-dot"></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+      <section class="gallery-section section" id="gallery">
+  <div class="gallery-bg-wrapper">
+    <div class="container gallery-container">
+      <div class="gallery-content-wrapper">
+        <h2 class="section-title gallery-title">Gallery</h2>
+        <p class="gallery-subtitle">
+          Immerse yourself in the breathtaking landscapes of Windvalley. From
+          the golden mists of early dawn to the mysterious glow of ancient
+          sanctuaries, every valley offers a unique canvas of light and motion.
+        </p>
+        <div class="gallery-swiper-container">
+          <ul class="swiper-wrapper gallery-swiper-wrapper">
+            <li class="swiper-slide gallery-slide">
+              <picture>
+                <source
+                  srcset="/windvalley/assets/gallery-img1-desk-2ea52fdc.png "
+                  media="(min-width: 1440px)"
+                  width="304"
+                  height="523" />
+                <source
+                  srcset="/windvalley/assets/gallery-img1-mob-4fdd2d59.png "
+                  width="343"
+                  height="522" />
+                <img
+                  class="gallery-img"
+                  src="/windvalley/assets/gallery-img1-mob-4fdd2d59.png"
+                  alt="Screenshot of the game"
+                  width="343"
+                  height="522"
+                  loading="lazy"
+              /></picture>
+            </li>
+            <li class="swiper-slide gallery-slide">
+              <picture>
+                <source
+                  srcset="/windvalley/assets/gallery-img2-desk-12437d91.png "
+                  media="(min-width: 1440px)"
+                  width="607"
+                  height="826" />
+                <source
+                  srcset="/windvalley/assets/gallery-img2-mob-7986ba9e.png "
+                  width="343"
+                  height="522" />
+                <img
+                  class="gallery-img"
+                  src="/windvalley/assets/gallery-img2-mob-7986ba9e.png"
+                  alt="Screenshot of the game"
+                  width="343"
+                  height="522"
+                  loading="lazy"
+              /></picture>
+            </li>
+            <li class="swiper-slide gallery-slide">
+              <picture>
+                <source
+                  srcset="/windvalley/assets/gallery-img3-desk-2b1b53a3.png "
+                  media="(min-width: 1440px)"
+                  width="304"
+                  height="523" />
+                <source
+                  srcset="/windvalley/assets/gallery-img3-mob-3e6c13d8.png "
+                  width="343"
+                  height="522" />
+                <img
+                  class="gallery-img"
+                  src="/windvalley/assets/gallery-img3-mob-3e6c13d8.png"
+                  alt="Screenshot of the game"
+                  width="343"
+                  height="522"
+                  loading="lazy"
+              /></picture>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+      <section class="section faq-section" id="faq">
+  <div class="faq-bg-wrapper">
+    <div class="container faq-container">
+      <div class="faq-content-wrapper">
+        <h2 class="section-title faq-title">FAQ</h2>
+        <p class="faq-subtitle">
+          Everything you need to know before the flight.
+        </p>
+        <ul class="faq-list">
+          <li class="faq-list-item">
+            <button class="faq-top-text-btn">
+              <div class="faq-btn-text-wrapper">
+                <p class="faq-btn-text">Is the gameplay fast-paced?</p>
+                <p class="faq-bottom-text">
+                  Nope, not at all. It's more about slowing down, watching the
+                  patterns, and thinking through your moves.
+                </p>
+              </div>
+              <span class="faq-toggle-symbol"
+                ><svg class="faq-icon" width="24" height="24">
+                  <use href="/windvalley/assets/sprite-39ca4af8.svg#icon-plus"></use></svg
+              ></span>
+            </button>
+          </li>
+          <li class="faq-list-item">
+            <button class="faq-top-text-btn">
+              <div class="faq-btn-text-wrapper">
+                <p class="faq-btn-text">Do levels become more complex?</p>
+                <p class="faq-bottom-text">
+                  Definitely. We add new elements bit by bit so you're not
+                  overwhelmed.
+                </p>
+              </div>
+              <span class="faq-toggle-symbol"
+                ><svg class="faq-icon" width="24" height="24">
+                  <use href="/windvalley/assets/sprite-39ca4af8.svg#icon-plus"></use></svg
+              ></span>
+            </button>
+          </li>
+          <li class="faq-list-item">
+            <button class="faq-top-text-btn">
+              <div class="faq-btn-text-wrapper">
+                <p class="faq-btn-text">
+                  Can players control individual creatures?
+                </p>
+                <p class="faq-bottom-text">
+                  No. The flock moves as a collective unit influenced by wind.
+                </p>
+              </div>
+              <span class="faq-toggle-symbol"
+                ><svg class="faq-icon" width="24" height="24">
+                  <use href="/windvalley/assets/sprite-39ca4af8.svg#icon-plus"></use></svg
+              ></span>
+            </button>
+          </li>
+          <li class="faq-list-item">
+            <button class="faq-top-text-btn">
+              <div class="faq-btn-text-wrapper">
+                <p class="faq-btn-text">Are there multiple environments?</p>
+                <p class="faq-bottom-text">
+                  Yes. Each valley has distinct terrain and airflow behavior.
+                </p>
+              </div>
+              <span class="faq-toggle-symbol"
+                ><svg class="faq-icon" width="24" height="24">
+                  <use href="/windvalley/assets/sprite-39ca4af8.svg#icon-plus"></use></svg
+              ></span>
+            </button>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+      <section class="section contact-section" id="contact">
+  <div class="contact-bg-wrapper">
+    <div class="container contact-container">
+      <div class="contact-content-wrapper">
+        <div class="contact-text-wrapper">
+          <h2 class="section-title contact-title">Contact</h2>
+          <p class="contact-subtitle">
+            Have questions or want to share your journey? Our winds are always
+            open for your message.
+          </p>
+          <a href="mailto:info@windvalley.online" class="contact-link">
+            <span class="contact-link-email-span">info@windvalley.online</span>
+            <span class="contact-link-text-span">Email us</span>
+          </a>
+        </div>
+      </div>
+    </div>
+    <picture>
+      <source
+        srcset="/windvalley/assets/contact-img-desk-a9a3ac4d.png "
+        media="(min-width: 1440px)"
+        width="692"
+        height="808" />
+      <source
+        srcset="/windvalley/assets/contact-img-mob-cf92f19c.png "
+        width="161"
+        height="240" />
+      <img
+        class="contact-img"
+        src="/windvalley/assets/contact-img-mob-cf92f19c.png"
+        alt="Screenshot of the game"
+        width="161"
+        height="240"
+        loading="lazy"
+    /></picture>
+  </div>
+</section>
+
+    </main>
+    <footer class="footer" id="footer">
+  <div class="container footer-container">
+    <nav class="footer-nav">
+      <ul class="footer-list">
+        <li class="footer-list-item">
+          <a class="footer-link" href="./privacy-policy.html">Privacy Policy</a>
+        </li>
+        <li class="footer-list-item">
+          <a class="footer-link" href="./terms-and-conditions.html"
+            >Terms and Conditions</a
+          >
+        </li>
+      </ul>
+    </nav>
+    <p class="footer-text">© 2026 windvalley.online — All rights reserved</p>
+  </div>
+</footer>
+
+
+    
+  </body>
+</html>
